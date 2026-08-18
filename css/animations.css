@@ -1,0 +1,60 @@
+/* Fade In Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Floating Animation */
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Hero Content Animation */
+
+.hero-content {
+    animation: fadeIn 1.2s ease;
+}
+
+.hero-content h1 {
+    animation: floating 4s infinite ease-in-out;
+}
+
+/* Card Animations */
+
+.category-card,
+.card,
+.popular-card,
+.testimonial-card,
+.stat-card {
+    animation: fadeIn 1s ease;
+}
+
+/* Hover Effects */
+
+.category-card:hover,
+.card:hover,
+.popular-card:hover,
+.testimonial-card:hover,
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px #8B5CF6;
+}
